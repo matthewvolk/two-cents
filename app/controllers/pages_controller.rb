@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
-  def home
+class PagesController < ApplicationController #AppCont is a pre-written rails based class
+  def home # <- functions inside of a class are called methods
   end
 end
