@@ -24,10 +24,23 @@
 * hover teal #00d9c1
 */
 
-h1, h2, h3 {
+// typography styles
+.home-callout h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
+// selection styling
+.home-callout ::-moz-selection {
+  color: white;
+  background: #00D6BF;
+}
+
+.home-callout ::selection {
+  color: white; 
+  background: #00D6BF;
+}
+
+// nav styles
 .navbar, .home-callout {
   background: #20252D;
 }
@@ -36,20 +49,22 @@ h1, h2, h3 {
   border: none;
 }
 
-.navbar-inverse .navbar-brand {
-  color: white;
-}
-
+// white logo color in nav
+.navbar-inverse .navbar-brand, 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #00d9c1;
+// light teal hover state for nav items
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #00D6BF;
 }
 
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: #00d9c1;
+// mobile navbar button background
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #00d9c1;
 }
 
 .home-callout {
