@@ -17,14 +17,32 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+/* Style Guide
+* background #20252D
+* white #FFFFFF
+* teal #00D6BF
+* hover teal #00d9c1
+*/
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
-body, .navbar {
+.navbar, .home-callout {
   background: #20252D;
 }
 
 .navbar {
   border: none;
+}
+
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #00d9c1;
 }
