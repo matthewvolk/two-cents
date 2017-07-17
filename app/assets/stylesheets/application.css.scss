@@ -16,6 +16,8 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 /* Style Guide
 * background #20252D
@@ -64,7 +66,7 @@
 // mobile navbar button background
 .navbar-inverse .navbar-toggle:hover, 
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #00d9c1;
+  background-color: #00D6BF;
 }
 
 .home-callout {
