@@ -51,6 +51,14 @@
   border: none;
 }
 
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+  background-color: #00D6BF;
+}
+
 // white logo color in nav
 .navbar-inverse .navbar-brand, 
 .navbar-inverse .navbar-nav > li > a {
@@ -66,7 +74,7 @@
 // mobile navbar button background
 .navbar-inverse .navbar-toggle:hover, 
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #00D6BF;
+  background-color: transparent;
 }
 
 .home-callout {
