@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#home' # root is like homepage, so we're saying the homepage needs to point to the pages controller, home method
   get 'about', to: 'pages#about'
   resources :contacts #creates a RESTful api for http web functionality
+  get 'contact-us', to: 'contacts#new'
 end
 
 # routes file is the first file opened when someone comes to the site, rails says "okay, the root (the homepage) points to the pages controller, and the home action in there"
