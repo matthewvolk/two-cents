@@ -37,6 +37,12 @@
       </div><!-- end container -->
     </nav>
     
+    <div class="container">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>
+    
     <%= yield %> <!-- rails pulls in code from other /view/ files here -->
   
   </body>
