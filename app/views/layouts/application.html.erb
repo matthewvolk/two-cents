@@ -30,7 +30,11 @@
         </div>
         
         <div class "collapse navbar-collapse" id="main-nav-collapse">
-          <ul class="nav navbar-nav navbar-right text-center">
+          <div class="nav navbar-nav navbar-right text-center">
+            <a href="/users/sign_in" class="btn btn-default navbar-btn btn-sm">Log In</a>
+            <a href="/users/sign_up" class="btn btn-default navbar-btn btn-sm">Register</a>
+          </div>
+          <ul class="nav navbar-nav navbar-left text-center">
             <li><%= link_to "About", about_path %></li>
             <li><%= link_to "Contact", new_contact_path %></li>
           </ul>
