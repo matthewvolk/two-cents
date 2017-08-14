@@ -32,14 +32,14 @@
 }
 
 // selection styling
-.home-callout ::-moz-selection {
+::-moz-selection {
   color: white;
-  background: #00D6BF;
+  background: #20252D;
 }
 
-.home-callout ::selection {
+::selection {
   color: white; 
-  background: #00D6BF;
+  background: #20252D;
 }
 
 // nav styles
@@ -55,8 +55,13 @@
   border-color: transparent;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+  color: rgba (255, 255, 255, 0.7);
+
+}
+
 .navbar-inverse .navbar-toggle:hover .icon-bar {
-  background-color: #00D6BF;
+  background-color: #fff;
 }
 
 .navbar-inverse .navbar-brand {
