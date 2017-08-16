@@ -32,17 +32,19 @@
         <div class "collapse navbar-collapse" id="main-nav-collapse">
           <div class="nav navbar-nav navbar-right text-center">
             
-            
-            <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn btn-sm" %>
-            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn btn-sm" %>
-            
-            
-            
+            <% if user_signed_in? %>
+              <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn btn-sm" %>
+            <% else %>
+              <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn btn-sm" %>
+              <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn btn-sm" %>
+            <% end %>
           </div>
+          
           <ul class="nav navbar-nav navbar-left text-center">
             <li><%= link_to "About", about_path %></li>
             <li><%= link_to "Contact", new_contact_path %></li>
           </ul>
+          
         </div><!-- /.navbar-collapse -->
       </div><!-- end container -->
     </nav>
@@ -56,4 +58,5 @@
     <%= yield %> <!-- rails pulls in code from other /view/ files here -->
   
   </body>
+  
 </html>
