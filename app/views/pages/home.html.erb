@@ -1,7 +1,7 @@
 <div class="home-callout text-center container-fluid">
     <h1><i class="fa fa-hand-scissors-o" aria-hidden="true"></i> TwoCents</h1>
     <hr/>
-    <h4>A Subscription Membership Based SaaS Product, by Matt Volk</h4>
+    <h4>A subscription-membership software product, by Matthew Volk</h4>
 </div>
   <div class="card-deck">
     <div class="container">
@@ -11,8 +11,9 @@
           <div class="card-body">
             <h4 class="card-title">Basic Membership</h4>
             <hr />
-            <p class="card-text">The button below will take the user to the regular registration path.</p>
-            <%= link_to "Start for Free", "#", class: "btn btn-primary" %>
+            <p class="card-text">The button below will pass basic plan vars and params
+            through the string query taking the user to the regular registration path.</p>
+            <%= link_to "Start for Free", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary" %>
           </div>
         </div>
       </div>
@@ -21,8 +22,9 @@
           <div class="card-body">
             <h4 class="card-title">Pro Membership</h4>
             <hr />
-            <p class="card-text">The button below will demonstrate this portfolio site's ecommerce capabilities.</p>
-            <%= link_to "$10/month", "#", class: "btn btn-primary" %>
+            <p class="card-text">The button below will pass pro plan vars and params
+            through the string query taking the user to the premium registration path.</p>
+            <%= link_to "$10/month", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-primary" %>
           </div>
         </div>
       </div>
