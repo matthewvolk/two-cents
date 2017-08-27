@@ -3,3 +3,15 @@ Memberships
 * User should see link for pro plan on homepage
 * Basic plan should link to regular Devise sign up path
 * Pro plan link should point to a custom sign up form 
+
+ActiveRecord - Rails' way of querying the database
+Parameters
+Substitution
+
+Controller.rb files control the HTTP Requests, i.e. GET, POST, etc.
+Views control what the user sees on their display
+Model files use ActiveRecord to communicate with the database
+
+Any data sent through a web app is called parameters (parameters are either query strings
+    or posts)
+
