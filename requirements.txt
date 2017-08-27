@@ -1,17 +1,44 @@
-Memberships
-* User should see link for basic plan on homepage
-* User should see link for pro plan on homepage
-* Basic plan should link to regular Devise sign up path
-* Pro plan link should point to a custom sign up form 
+ (\_(\
+ (='.')
+o(_")") 
+
+------
+
+Membership Integration:
+
+    1) User should see link for basic plan on homepage
+    2) User should see link for pro plan on homepage
+    3) Basic plan should link to regular Devise sign up path
+    4) Pro plan link should point to a custom sign up form 
+
+-----
+
+Vocabulary:
 
 ActiveRecord - Rails' way of querying the database
-Parameters
-Substitution
+Parameters - any data sent thought a web app (query strings or POST requests)
+Substitution - Mentally backtracing where a variable gets its value
+
+-----
+
+Notes:
 
 Controller.rb files control the HTTP Requests, i.e. GET, POST, etc.
 Views control what the user sees on their display
 Model files use ActiveRecord to communicate with the database
 
-Any data sent through a web app is called parameters (parameters are either query strings
-    or posts)
+-----
 
+Stripe Integration:
+
+    1) Users should have a stripe customer token in the users table
+    2) Javascript should prevent pro form from submitting when user fills it out
+       and should send card info to stripe, which will return card token.
+    3) Javascript will then take the card token & user field, and send to our
+       Rails app for validation
+    4) Once validated, Rails will send user info, such as email and plan id
+       back to Stripe so they can create a subscription and then send back a 
+       CUSTOMER token. Different from card token.
+
+    
+    
